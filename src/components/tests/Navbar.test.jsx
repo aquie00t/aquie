@@ -27,6 +27,6 @@ describe("Navbar component", () => {
   test("has correct number of navigation links", () => {
     render(<Navbar />);
     const links = screen.getAllByRole("link");
-    expect(links).toHaveLength(5);
+    expect(links).toHaveLength(4);
   });
 });

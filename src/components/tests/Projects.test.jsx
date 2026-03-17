@@ -18,11 +18,13 @@ describe("Projects component", () => {
     ).toBeInTheDocument();
   });
 
-  test("renders project link with correct href", () => {
+  test("renders project links with correct href", () => {
     render(<Projects />);
-    const link = screen.getByRole("link", { name: /view project/i });
-    expect(link).toBeInTheDocument();
-    expect(link).toHaveAttribute(
+    const links = screen.getAllByRole("link", { name: /view project/i });
+
+    expect(links.length).toBeGreaterThan(0);
+
+    expect(links[0]).toHaveAttribute(
       "href",
       "https://github.com/aquie00t/aquie-client",
     );
