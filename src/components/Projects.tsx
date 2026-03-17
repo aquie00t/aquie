@@ -5,6 +5,12 @@ const projects = [
       "My personal website built with React, Tailwind CSS, and Vite.",
     link: "https://github.com/aquie00t/aquie-client",
   },
+  {
+    title: "TDN API",
+    description:
+      "Core backend for Turkish Developer Network (TDN), a community and sharing platform for developers. (API)",
+    link: "https://github.com/turkey-developer-network/tdn-api",
+  },
 ];
 
 export default function Projects() {

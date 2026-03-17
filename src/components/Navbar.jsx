@@ -2,7 +2,6 @@ const items = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Projects", href: "#projects" },
-  { label: "Work Experience", href: "#work" },
   { label: "Contact", href: "#contact" },
 ];
 
